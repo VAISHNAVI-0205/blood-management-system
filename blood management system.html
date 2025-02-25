@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Management App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+    <h1>Blood Management App</h1>
+
+    <div class="container">
+        <div class="input-container">
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+
+            <label for="donorName">Donor Name:</label>
+            <input type="text" id="donorName" placeholder="Enter donor name">
+
+            <label for="donationDate">Donation Date:</label>
+            <input type="date" id="donationDate">
+
+            <button onclick="addDonation()">Add Blood Donation</button>
+        </div>
+
+        <h3>Available Blood Donations</h3>
+        <ul id="donationList"></ul>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
